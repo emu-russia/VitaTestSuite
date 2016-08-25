@@ -152,6 +152,22 @@ namespace VitaTestSuite
             hexBox1.ByteProvider = new DynamicByteProvider(Data);
         }
 
+        private void memoryPageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEnterValue enterValue = new FormEnterValue();
+            enterValue.SetLabel("Address:");
+            enterValue.FormClosed += enterValue_FormClosed;
+            enterValue.ShowDialog();
+        }
+
+        void enterValue_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormEnterValue enterValue = (FormEnterValue)sender;
+
+            if (enterValue.Processed)
+                Dump(enterValue.Value, 0x1000);
+        }
+
     }
 
     public delegate void DumpDelegate(uint Address, int Size);

@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-class ArmDisasm
+public class ArmDisasm
 {
     /// <summary>
     /// Specify endianness mode.
@@ -103,20 +103,173 @@ class ArmDisasm
         FloatDataProcessing,
     }
 
+    public enum Condition
+    {
+        Equal = 0,
+        NotEqual,
+        CarrySet,
+        CarryClear,
+        Minus,
+        Plus,
+        Overflow,
+        NotOverflow,
+        UnsignedHigher,
+        UnsignedLowerOrSame,
+        SignedGreaterOrEqual,
+        SignedLess,
+        SignedGreater,
+        SignedLessOrEqual,
+        Always,             // 0xe
+        Unknown,        // 0xf
+    }
+
     public class DisasmResult
     {
         public string Name;
         public string Parameters;
         public InstructionType Type;
         public Instruction Instr;
+        public Condition Cond;
+    }
+
+    private delegate void InstrDelegate(uint instr, string encoding, ref DisasmResult res);
+
+    class InstrSpec
+    {
+        public string encoding;
+        public InstrDelegate instrHandler;
+        public InstrSpec(string e, InstrDelegate d) { encoding = e; instrHandler = d; }
+    }
+
+    /// <summary>
+    /// Extract specified bits from encoding string (Arm/Thumb)
+    /// </summary>
+    /// <param name="instr"></param>
+    /// <param name="encoding"></param>
+    /// <param name="spec"></param>
+    /// <returns></returns>
+    private static uint Extract (uint instr, string encoding, char spec)
+    {
+        uint res = 0;
+        bool foundOnce = false;
+
+        for (int i = 0; i < encoding.Length; i++ )
+        {
+            if ( encoding[i] == spec )
+            {
+                if ((instr & (1 << (encoding.Length - 1 - i))) != 0)
+                    res |= 1;
+                res <<= 1;
+                foundOnce = true;
+            }
+        }
+
+        if (!foundOnce)
+            throw new Exception();
+
+        return res;
+    }
+
+    private static string Cond(uint cond)
+    {
+        switch(cond)
+        {
+            case 0: return "eq";
+            case 1: return "ne";
+            case 2: return "cs";
+            case 3: return "cc";
+            case 4: return "mi";
+            case 5: return "pl";
+            case 6: return "vs";
+            case 7: return "vc";
+            case 8: return "hi";
+            case 9: return "ls";
+            case 0xa: return "ge";
+            case 0xb: return "lt";
+            case 0xc: return "gt";
+            case 0xd: return "le";
+            case 0xe: return "";
+        }
+        return "???";
+    }
+
+    private static string Imm(uint imm)
+    {
+        return "#0x" + imm.ToString("X");
     }
 
     #region Arm Instruction Set
 
+    private InstrSpec[] armSpecs = new InstrSpec[] {
+        new InstrSpec ( "cccc0010101snnnnddddiiiiiiiiiiii", new InstrDelegate(arm_ADC_Immediate) ),     // pp 300
+
+    };
+
     public DisasmResult DisasmArm(uint Address, byte[] Stream)
     {
+        DisasmResult res = new DisasmResult();
 
-        return null;
+        res.Instr = Instruction.UNDEFINED;
+        res.Type = InstructionType.Undefined;
+        res.Name = "";
+        res.Parameters = "";
+        res.Cond = Condition.Unknown;
+
+        uint instr = FetchWord(Stream);
+
+        //
+        // TODO: Do it Parallel.ForEach
+        //
+
+        foreach ( InstrSpec spec in armSpecs )
+        {
+            uint mask = 0;
+            uint enc = 0;
+
+            for (int i=0; i<spec.encoding.Length; i++)
+            {
+                char c = spec.encoding[i];
+
+                if (c == '1')
+                    enc |= (uint)(1 << (spec.encoding.Length - 1 - i));
+
+                if (c == '1' || c == '0')
+                    mask |= (uint)(1 << (spec.encoding.Length - 1 - i));
+            }
+
+            if ((instr & mask) == enc)
+            {
+                spec.instrHandler(instr, spec.encoding, ref res);
+                break;
+            }
+        }
+
+        return res;
+    }
+
+    private static void arm_ADC_Immediate (uint instr, string encoding, ref DisasmResult res)
+    {
+        // If Rd == 1111 and S == 1 then see SUBS_PC_LR and related instructions
+
+        uint cond = Extract(instr, encoding, 'c');
+        uint s = Extract(instr, encoding, 's');
+        uint Rn = Extract(instr, encoding, 'n');
+        uint Rd = Extract(instr, encoding, 'd');
+        uint imm = Extract(instr, encoding, 'i');
+
+        if ((imm & 0x800) != 0)
+            imm |= 0xfffff000;
+
+        res.Type = InstructionType.DataProcessing;
+        res.Instr = Instruction.ADC;
+        res.Cond = (Condition)cond;
+
+        res.Name = "adc";
+        if (s != 0)
+            res.Name += "s";
+        res.Name += Cond(cond);
+
+        res.Parameters = "r" + Rd.ToString() + ", r" + Rn.ToString() + ", " + Imm(imm);
     }
 
     #endregion
@@ -125,8 +278,15 @@ class ArmDisasm
 
     public DisasmResult DisasmThumb(uint Address, byte[] Stream)
     {
+        DisasmResult res = new DisasmResult();
 
-        return null;
+        res.Instr = Instruction.UNDEFINED;
+        res.Type = InstructionType.Undefined;
+        res.Name = "";
+        res.Parameters = "";
+        res.Cond = Condition.Unknown;
+
+        return res;
     }
 
     #endregion

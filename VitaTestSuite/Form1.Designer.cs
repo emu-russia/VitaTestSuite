@@ -176,6 +176,7 @@
             this.memoryPageToolStripMenuItem.Name = "memoryPageToolStripMenuItem";
             this.memoryPageToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.memoryPageToolStripMenuItem.Text = "Memory Page...";
+            this.memoryPageToolStripMenuItem.Click += new System.EventHandler(this.memoryPageToolStripMenuItem_Click);
             // 
             // debugToolStripMenuItem
             // 
@@ -320,7 +321,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(267, 336);
+            this.tabPage2.Size = new System.Drawing.Size(267, 339);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -405,7 +406,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(385, 336);
+            this.tabPage4.Size = new System.Drawing.Size(385, 339);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -453,7 +454,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(432, 336);
+            this.tabPage6.Size = new System.Drawing.Size(432, 339);
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -606,7 +607,7 @@
             // 
             this.splitContainer6.Panel2.Controls.Add(this.splitContainer1);
             this.splitContainer6.Size = new System.Drawing.Size(1116, 553);
-            this.splitContainer6.SplitterDistance = 1;
+            this.splitContainer6.SplitterDistance = 25;
             this.splitContainer6.TabIndex = 4;
             // 
             // Form1

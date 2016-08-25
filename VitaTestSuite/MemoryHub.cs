@@ -23,6 +23,13 @@ public class MemoryHub
 {
     public bool LittleEndian = false;
 
+    public delegate byte ReadByteDelegate(uint Address);
+    public delegate void WriteByteDelegate(uint Address, byte val);
+    public delegate ushort ReadHalfDelegate(uint Address);
+    public delegate void WriteHalfDelegate(uint Address, ushort val);
+    public delegate uint ReadWordDelegate(uint Address);
+    public delegate void WriteWordDelegate(uint Address, uint val);
+
     public List<MemRange> ranges = new List<MemRange>();
 
     public void AddMemory ( string tag, int size )
