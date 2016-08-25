@@ -1,0 +1,9 @@
+bin
+obj
+*.dll
+*.pdb
+*.exe
+*.xml
+*.self
+*.manifest
+*.config
