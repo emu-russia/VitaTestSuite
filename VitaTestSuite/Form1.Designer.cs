@@ -79,6 +79,7 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
+            this.loadSceELFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -131,6 +132,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.executeCmdScriptToolStripMenuItem,
             this.loadDumpToolStripMenuItem,
+            this.loadSceELFToolStripMenuItem,
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -437,7 +439,7 @@
             // 
             this.hexBox1.ColumnInfoVisible = true;
             this.hexBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.hexBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.hexBox1.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.hexBox1.LineInfoVisible = true;
             this.hexBox1.Location = new System.Drawing.Point(3, 3);
             this.hexBox1.Name = "hexBox1";
@@ -610,6 +612,13 @@
             this.splitContainer6.SplitterDistance = 25;
             this.splitContainer6.TabIndex = 4;
             // 
+            // loadSceELFToolStripMenuItem
+            // 
+            this.loadSceELFToolStripMenuItem.Name = "loadSceELFToolStripMenuItem";
+            this.loadSceELFToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.loadSceELFToolStripMenuItem.Text = "Load Sce ELF...";
+            this.loadSceELFToolStripMenuItem.Click += new System.EventHandler(this.loadSceELFToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -718,6 +727,7 @@
         private System.Windows.Forms.ToolStripMenuItem dumpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem memoryPageToolStripMenuItem;
         private System.Windows.Forms.SplitContainer splitContainer6;
+        private System.Windows.Forms.ToolStripMenuItem loadSceELFToolStripMenuItem;
     }
 }
 

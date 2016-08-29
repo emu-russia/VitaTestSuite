@@ -168,6 +168,18 @@ namespace VitaTestSuite
                 Dump(enterValue.Value, 0x1000);
         }
 
+        private void loadSceELFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormSelfLoad selfLoader = new FormSelfLoad();
+            selfLoader.FormClosed += selfLoader_FormClosed;
+            selfLoader.Show();
+        }
+
+        void selfLoader_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
     }
 
     public delegate void DumpDelegate(uint Address, int Size);
