@@ -1,0 +1,67 @@
+
+Sony CXD5315GG – Quad-core processor with two Samsung K4P2G324EC 256 MB Mobile DDR2-S4 SDRAM Memory die (512MB total memory)
+Toshiba THGBM3G5D1FBAIE – Multichip Memory Package – Memory and Memory Controller
+Marvell 88W878S-BKB2 – Avastar WLAN/Bluetooth/FM Single-Chip System-on-Chip
+Fujitsu MB44C026A – Possible Multichannel Switching Controller
+Sony 1144KM427 – suspected AKM Magnetic Compass
+Wolfson Micro WM1803E – Audio Codec
+Qualcomm MDM6200 – Gobi Single-mode Modem
+Qualcom PM8028 – Power Management IC
+Toshiba TY890A111222KA – Mobile SDR SDRAM Memory
+Kionix KXTC9 – Three-axis MEMS accelerometer
+Avago ACPM-7868 – GSM Power Amplifier
+Avago ACPM-5005 – W-CDMA Band V Power Amplifier Module
+Avago ACPM-5001 – W-CDMA Band I Power Amplifier Module
+Avago ACPM-5002 – W-CDMA Band II Power Amplifier Module
+Avago ACPM-5008 – W-CDMA Band VIII Power Amplifier Module
+EPCOS B7429 – SAW Duplexer
+Sony CXM3555ER – SP10T Antenna Switch Module
+Atmel MXT224 – 224-Channel Touchscreen Sensor
+STMicroelectronics 32P10SOD
+STMicroelectronics 3GA51H – Gyroscope
+
+
+Side A:
+
+
+Analog	1	
+ST Microelectronics	
+STOD03ATPUR	DC-DC Converter - Dual, Step-Up / Inverting, 4.6V, 200mA, 1.5MHz, for Powering AMOLED Display	Y136, D03A, S
+
+Analog	1	
+Intersil	
+ISL9110IRTAZ	Regulator - Buck-Boost Switching, Adjustable, 1.2A, 2.5MHz	Logo, GAUA, HG5K
+
+Texas Instruments	
+SN99057A5	1x Die - Power Management IC	SN99057A5, Logo, TI, 2010
+
+Texas Instruments	
+bq27520YZF	Battery Fuel Gauge - System-Side, w/ Integrated LDO, for Single Li-Ion Cell	TI 18A123I, SN27520S1 (Die Marking: BDQ035, M 2009)
+
+
+Side B:
+
+Integrated Circuit	MEMS	1	
+AKM Semiconductor	AKM8975B	Electronic Compass - 3-Axis, w/ Built-In ADC, 8-Bit Digital Output & Supplementary Substrate	8975C, D137L
+
+IDT	Clock Synthesizer	
+638, 139L, 67LG (Die Marking: 2006, 895-132, 2006, AT270, (M) IDT)
+
+Crystal	1	
+NDK	NX3225GA Crystal - 27.000MHz	27.000, Logo :138
+
+Crystal	1	
+Epson Toyocom	FC-135	Crystal - 32.768kHz	A140C
+
+Crystal	1	
+TXC	7M Series	Crystal - 19.200MHz	T192, Mh9A
+
+Logic	1	
+Wolfson Micro	WM1803E	Audio Codec	Logo, WM1803E, 1BAKPMN
+
+Logic	1	
+Toshiba Semiconductor	TC7WG126FK	Buffer - Dual, w/ 3-State Output	WG, 126
+
+Logic	1	
+Texas Instruments	TS3A5018RSVR	Analog Switch - Quad, SPDT, 10 Ohm	ZUN, 19H
+
