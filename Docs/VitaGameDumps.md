@@ -37,6 +37,7 @@ https://www.pspx.ru/forum/showthread.php?t=107300
 
 1. PS Vita Gamecards
 https://playstationdev.wiki/psvitadevwiki/index.php?title=Media
+Game data is stored on the Gamecard. After sticking the Gamecard into Vita `ux0:appmeta/GAME`, a kind of "shortcut" is created, and a bubble with the game icon is created on the LiveArea. This bubble doesn't work without a Gamecard. 
 
 2. PS Store. Links like: http://zeus.dl.playstation.net/cdn/UP1018/PCSE00442_00/PuAlJwyfeYniCoMAyQAvJIOTRgXYZVftMfOSmVNCGfaIEAHoBxDGKZsmBEEUPymm.pkg
 Complete list of known links: https://nopaystation.com/
