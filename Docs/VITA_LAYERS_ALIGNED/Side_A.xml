@@ -50497,10 +50497,10 @@
     <Label />
     <LambdaWidth>1</LambdaWidth>
     <LambdaHeight>1</LambdaHeight>
-    <LambdaX>330.436249</LambdaX>
-    <LambdaY>336.069153</LambdaY>
-    <LambdaEndX>344.436249</LambdaEndX>
-    <LambdaEndY>335.819153</LambdaEndY>
+    <LambdaX>330.336243</LambdaX>
+    <LambdaY>336.269165</LambdaY>
+    <LambdaEndX>344.336243</LambdaEndX>
+    <LambdaEndY>336.019165</LambdaEndY>
     <Type>WireInterconnect</Type>
     <ColorOverride>Black</ColorOverride>
     <LabelAlignment>GlobalSettings</LabelAlignment>
