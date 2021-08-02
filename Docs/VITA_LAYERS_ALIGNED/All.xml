@@ -66299,4 +66299,77 @@
     <WireTangent>NaN</WireTangent>
     <TraverseBlackList />
   </Entity>
+  <Entity>
+    <Label>Beacons</Label>
+    <LambdaWidth>1</LambdaWidth>
+    <LambdaHeight>1</LambdaHeight>
+    <LambdaX>3.73300934</LambdaX>
+    <LambdaY>-1.766407</LambdaY>
+    <LambdaEndX>0</LambdaEndX>
+    <LambdaEndY>0</LambdaEndY>
+    <Type>Layer</Type>
+    <ColorOverride>Black</ColorOverride>
+    <LabelAlignment>GlobalSettings</LabelAlignment>
+    <Priority>3</Priority>
+    <WidthOverride>0</WidthOverride>
+    <Children>
+      <Entity>
+        <Label>eMMC rails</Label>
+        <LambdaWidth>1</LambdaWidth>
+        <LambdaHeight>1</LambdaHeight>
+        <LambdaX>411.5354</LambdaX>
+        <LambdaY>104.050247</LambdaY>
+        <LambdaEndX>0</LambdaEndX>
+        <LambdaEndY>0</LambdaEndY>
+        <Type>Beacon</Type>
+        <ColorOverride>Black</ColorOverride>
+        <LabelAlignment>GlobalSettings</LabelAlignment>
+        <Priority>4</Priority>
+        <WidthOverride>0</WidthOverride>
+        <Children />
+        <Visible>true</Visible>
+        <WireLengthLambda>0</WireLengthLambda>
+        <WireTangent>NaN</WireTangent>
+      </Entity>
+      <Entity>
+        <Label>OLED rails</Label>
+        <LambdaWidth>1</LambdaWidth>
+        <LambdaHeight>1</LambdaHeight>
+        <LambdaX>673.555542</LambdaX>
+        <LambdaY>316.819641</LambdaY>
+        <LambdaEndX>0</LambdaEndX>
+        <LambdaEndY>0</LambdaEndY>
+        <Type>Beacon</Type>
+        <ColorOverride>Black</ColorOverride>
+        <LabelAlignment>GlobalSettings</LabelAlignment>
+        <Priority>4</Priority>
+        <WidthOverride>0</WidthOverride>
+        <Children />
+        <Visible>true</Visible>
+        <WireLengthLambda>0</WireLengthLambda>
+        <WireTangent>NaN</WireTangent>
+      </Entity>
+      <Entity>
+        <Label>Berkley SPI</Label>
+        <LambdaWidth>1</LambdaWidth>
+        <LambdaHeight>1</LambdaHeight>
+        <LambdaX>141.014572</LambdaX>
+        <LambdaY>224.152435</LambdaY>
+        <LambdaEndX>0</LambdaEndX>
+        <LambdaEndY>0</LambdaEndY>
+        <Type>Beacon</Type>
+        <ColorOverride>Black</ColorOverride>
+        <LabelAlignment>GlobalSettings</LabelAlignment>
+        <Priority>4</Priority>
+        <WidthOverride>0</WidthOverride>
+        <Children />
+        <Visible>true</Visible>
+        <WireLengthLambda>0</WireLengthLambda>
+        <WireTangent>NaN</WireTangent>
+      </Entity>
+    </Children>
+    <Visible>true</Visible>
+    <WireLengthLambda>0</WireLengthLambda>
+    <WireTangent>NaN</WireTangent>
+  </Entity>
 </ArrayOfEntity>
