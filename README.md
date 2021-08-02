@@ -1,6 +1,6 @@
 # VitaTestSuite
 
-This is not priority project, which we do when we need to distract myself from other things and collect my thoughts.
+This is not priority project, which we do when we need to distract ourself from other things and collect our thoughts.
 
 Test Suite for PS Vita.
 
