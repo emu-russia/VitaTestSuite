@@ -47189,7 +47189,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -47549,7 +47551,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>3.2142868</WireLengthLambda>
             <WireTangent>INF</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -53016,68 +53020,6 @@
             <Visible>true</Visible>
             <WireLengthLambda>9.078439</WireLengthLambda>
             <WireTangent>-0.0393706337</WireTangent>
-            <TraverseBlackList />
-          </Entity>
-          <Entity>
-            <Label />
-            <LambdaWidth>1</LambdaWidth>
-            <LambdaHeight>1</LambdaHeight>
-            <LambdaX>463.983673</LambdaX>
-            <LambdaY>127.17952</LambdaY>
-            <LambdaEndX>468.412231</LambdaEndX>
-            <LambdaEndY>123.322372</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
-            <LabelAlignment>GlobalSettings</LabelAlignment>
-            <Priority>2</Priority>
-            <PathPoints />
-            <WidthOverride>0</WidthOverride>
-            <Children />
-            <Visible>true</Visible>
-            <WireLengthLambda>5.872794</WireLengthLambda>
-            <WireTangent>-0.8709713</WireTangent>
-            <TraverseBlackList>
-              <EntityType>ViasConnect</EntityType>
-            </TraverseBlackList>
-          </Entity>
-          <Entity>
-            <Label />
-            <LambdaWidth>1</LambdaWidth>
-            <LambdaHeight>1</LambdaHeight>
-            <LambdaX>468.412231</LambdaX>
-            <LambdaY>123.322372</LambdaY>
-            <LambdaEndX>467.983673</LambdaEndX>
-            <LambdaEndY>112.46524</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
-            <LabelAlignment>GlobalSettings</LabelAlignment>
-            <Priority>2</Priority>
-            <PathPoints />
-            <WidthOverride>0</WidthOverride>
-            <Children />
-            <Visible>true</Visible>
-            <WireLengthLambda>10.8655872</WireLengthLambda>
-            <WireTangent>25.3340816</WireTangent>
-            <TraverseBlackList />
-          </Entity>
-          <Entity>
-            <Label />
-            <LambdaWidth>1</LambdaWidth>
-            <LambdaHeight>1</LambdaHeight>
-            <LambdaX>467.983673</LambdaX>
-            <LambdaY>112.46524</LambdaY>
-            <LambdaEndX>473.5551</LambdaEndX>
-            <LambdaEndY>107.322372</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
-            <LabelAlignment>GlobalSettings</LabelAlignment>
-            <Priority>2</Priority>
-            <PathPoints />
-            <WidthOverride>0</WidthOverride>
-            <Children />
-            <Visible>true</Visible>
-            <WireLengthLambda>7.5822196</WireLengthLambda>
-            <WireTangent>-0.9230767</WireTangent>
             <TraverseBlackList />
           </Entity>
           <Entity>
@@ -61115,6 +61057,68 @@
             <WireLengthLambda>1.80276215</WireLengthLambda>
             <WireTangent>0.05554237</WireTangent>
             <TraverseBlackList />
+          </Entity>
+          <Entity>
+            <Label />
+            <LambdaWidth>1</LambdaWidth>
+            <LambdaHeight>1</LambdaHeight>
+            <LambdaX>463.7132</LambdaX>
+            <LambdaY>127.091995</LambdaY>
+            <LambdaEndX>467.6632</LambdaEndX>
+            <LambdaEndY>123.341995</LambdaEndY>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
+            <LabelAlignment>GlobalSettings</LabelAlignment>
+            <Priority>2</Priority>
+            <PathPoints />
+            <WidthOverride>0</WidthOverride>
+            <Children />
+            <Visible>true</Visible>
+            <WireLengthLambda>5.44656754</WireLengthLambda>
+            <WireTangent>-0.9493641</WireTangent>
+            <TraverseBlackList />
+          </Entity>
+          <Entity>
+            <Label />
+            <LambdaWidth>1</LambdaWidth>
+            <LambdaHeight>1</LambdaHeight>
+            <LambdaX>467.513184</LambdaX>
+            <LambdaY>112.791992</LambdaY>
+            <LambdaEndX>473.5632</LambdaEndX>
+            <LambdaEndY>106.992</LambdaEndY>
+            <Type>WireInterconnect</Type>
+            <ColorOverride>Black</ColorOverride>
+            <LabelAlignment>GlobalSettings</LabelAlignment>
+            <Priority>2</Priority>
+            <PathPoints />
+            <WidthOverride>0</WidthOverride>
+            <Children />
+            <Visible>true</Visible>
+            <WireLengthLambda>8.38109</WireLengthLambda>
+            <WireTangent>-0.958674</WireTangent>
+            <TraverseBlackList />
+          </Entity>
+          <Entity>
+            <Label />
+            <LambdaWidth>1</LambdaWidth>
+            <LambdaHeight>1</LambdaHeight>
+            <LambdaX>467.513184</LambdaX>
+            <LambdaY>112.742</LambdaY>
+            <LambdaEndX>467.5632</LambdaEndX>
+            <LambdaEndY>123.591995</LambdaEndY>
+            <Type>WireInterconnect</Type>
+            <ColorOverride>Black</ColorOverride>
+            <LabelAlignment>GlobalSettings</LabelAlignment>
+            <Priority>2</Priority>
+            <PathPoints />
+            <WidthOverride>0</WidthOverride>
+            <Children />
+            <Visible>true</Visible>
+            <WireLengthLambda>10.8501139</WireLengthLambda>
+            <WireTangent>216.920532</WireTangent>
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
         </Children>
         <Visible>true</Visible>
