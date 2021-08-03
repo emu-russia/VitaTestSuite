@@ -13018,8 +13018,8 @@
             <LambdaY>129.683075</LambdaY>
             <LambdaEndX>516.2433</LambdaEndX>
             <LambdaEndY>134.4199</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -13038,8 +13038,8 @@
             <LambdaY>134.4199</LambdaY>
             <LambdaEndX>507.0854</LambdaEndX>
             <LambdaEndY>142.998856</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -13058,8 +13058,8 @@
             <LambdaY>142.998856</LambdaY>
             <LambdaEndX>507.2433</LambdaEndX>
             <LambdaEndY>149.630432</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -13098,8 +13098,8 @@
             <LambdaY>129.683075</LambdaY>
             <LambdaEndX>518.8749</LambdaEndX>
             <LambdaEndY>135.683075</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -13118,8 +13118,8 @@
             <LambdaY>135.4199</LambdaY>
             <LambdaEndX>509.980133</LambdaEndX>
             <LambdaEndY>144.840958</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -30504,8 +30504,8 @@
             <LambdaY>191.9815</LambdaY>
             <LambdaEndX>709.4779</LambdaEndX>
             <LambdaEndY>193.2073</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -34924,8 +34924,8 @@
             <LambdaY>128.430634</LambdaY>
             <LambdaEndX>516.060669</LambdaEndX>
             <LambdaEndY>130.071655</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -37235,7 +37235,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>19.6668</WireLengthLambda>
             <WireTangent>-294.9373</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -41125,8 +41127,8 @@
             <LambdaY>193.004379</LambdaY>
             <LambdaEndX>710.1678</LambdaEndX>
             <LambdaEndY>195.171051</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -41195,7 +41197,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>8.136366</WireLengthLambda>
             <WireTangent>1.07000232</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasInout</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -41415,7 +41419,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>11.3137083</WireLengthLambda>
             <WireTangent>-1</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -41435,7 +41441,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>1.901281</WireLengthLambda>
             <WireTangent>-0.0833279639</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -42095,7 +42103,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -42115,7 +42125,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -42135,7 +42147,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -42155,7 +42169,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -42175,7 +42191,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45015,7 +45033,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45035,7 +45055,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45255,7 +45277,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45335,7 +45359,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45415,7 +45441,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45435,7 +45463,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45455,7 +45485,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -45475,7 +45507,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>0</WireLengthLambda>
             <WireTangent>NaN</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>UnitCustom</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -53002,7 +53036,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>5.872794</WireLengthLambda>
             <WireTangent>-0.8709713</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -54082,7 +54118,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>63.5006447</WireLengthLambda>
             <WireTangent>0.00449954066</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -54384,7 +54422,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>38.6383972</WireLengthLambda>
             <WireTangent>0.997388</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -54750,7 +54790,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>46.21518</WireLengthLambda>
             <WireTangent>0.0061821905</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -54770,7 +54812,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>45.9305878</WireLengthLambda>
             <WireTangent>0.009331304</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -55214,7 +55258,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>60.2064438</WireLengthLambda>
             <WireTangent>1.0135138</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -59424,7 +59470,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>39.00125</WireLengthLambda>
             <WireTangent>0.008012821</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -59444,7 +59492,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>36.95013</WireLengthLambda>
             <WireTangent>0.9716978</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -62065,7 +62115,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>55.11209</WireLengthLambda>
             <WireTangent>0.006048298</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63125,7 +63177,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>34.204998</WireLengthLambda>
             <WireTangent>-0.978787661</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63185,7 +63239,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>33.0507355</WireLengthLambda>
             <WireTangent>-0.9968351</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63405,7 +63461,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>19.0133858</WireLengthLambda>
             <WireTangent>-0.994506061</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63665,7 +63723,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>93.7785</WireLengthLambda>
             <WireTangent>0.003949351</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63705,7 +63765,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>93.70561</WireLengthLambda>
             <WireTangent>0.00632408448</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63745,7 +63807,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>9.274634</WireLengthLambda>
             <WireTangent>-0.94505614</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63785,7 +63849,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>9.588815</WireLengthLambda>
             <WireTangent>-0.9468056</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63805,7 +63871,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>9.325673</WireLengthLambda>
             <WireTangent>-0.9560463</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63865,7 +63933,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>43.25953</WireLengthLambda>
             <WireTangent>0.003424643</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63913,8 +63983,8 @@
             <LambdaHeight>1</LambdaHeight>
             <LambdaX>519.1832</LambdaX>
             <LambdaY>134.868454</LambdaY>
-            <LambdaEndX>557.035034</LambdaEndX>
-            <LambdaEndY>135.090668</LambdaEndY>
+            <LambdaEndX>553.035034</LambdaEndX>
+            <LambdaEndY>135.067169</LambdaEndY>
             <Type>WireInterconnect</Type>
             <ColorOverride>Black</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
@@ -63923,9 +63993,11 @@
             <WidthOverride>0</WidthOverride>
             <Children />
             <Visible>true</Visible>
-            <WireLengthLambda>37.85246</WireLengthLambda>
-            <WireTangent>0.00587062445</WireTangent>
-            <TraverseBlackList />
+            <WireLengthLambda>33.85239</WireLengthLambda>
+            <WireTangent>0.005870151</WireTangent>
+            <TraverseBlackList>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -63933,7 +64005,7 @@
             <LambdaHeight>1</LambdaHeight>
             <LambdaX>520.2943</LambdaX>
             <LambdaY>136.868454</LambdaY>
-            <LambdaEndX>556.2202</LambdaEndX>
+            <LambdaEndX>553.2202</LambdaEndX>
             <LambdaEndY>136.868454</LambdaEndY>
             <Type>WireInterconnect</Type>
             <ColorOverride>Black</ColorOverride>
@@ -63943,7 +64015,7 @@
             <WidthOverride>0</WidthOverride>
             <Children />
             <Visible>true</Visible>
-            <WireLengthLambda>35.9259033</WireLengthLambda>
+            <WireLengthLambda>32.9259033</WireLengthLambda>
             <WireTangent>0</WireTangent>
             <TraverseBlackList />
           </Entity>
@@ -64032,11 +64104,11 @@
             <LambdaWidth>1</LambdaWidth>
             <LambdaHeight>1</LambdaHeight>
             <LambdaX>556.742859</LambdaX>
-            <LambdaY>134.983414</LambdaY>
+            <LambdaY>134.8834</LambdaY>
             <LambdaEndX>571.1873</LambdaEndX>
-            <LambdaEndY>149.501923</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <LambdaEndY>149.401917</LambdaEndY>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -64135,8 +64207,8 @@
             <LambdaY>148.983414</LambdaY>
             <LambdaEndX>591.1132</LambdaEndX>
             <LambdaEndY>149.279709</LambdaEndY>
-            <Type>WireInterconnect</Type>
-            <ColorOverride>Black</ColorOverride>
+            <Type>WirePower</Type>
+            <ColorOverride>Blue</ColorOverride>
             <LabelAlignment>GlobalSettings</LabelAlignment>
             <Priority>2</Priority>
             <PathPoints />
@@ -64145,7 +64217,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>20.15031</WireLengthLambda>
             <WireTangent>0.0147058377</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -64345,7 +64419,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>44.29936</WireLengthLambda>
             <WireTangent>0.011705461</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -64445,7 +64521,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>44.89191</WireLengthLambda>
             <WireTangent>0.011551274</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label>AB39</Label>
@@ -64585,7 +64663,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>21.78964</WireLengthLambda>
             <WireTangent>1.00965881</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -64625,7 +64705,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>19.4340916</WireLengthLambda>
             <WireTangent>1.02732289</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -64685,7 +64767,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>18.1337986</WireLengthLambda>
             <WireTangent>0.9329601</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -64785,7 +64869,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>15.3490925</WireLengthLambda>
             <WireTangent>1.03472126</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -64845,7 +64931,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>10.8952131</WireLengthLambda>
             <WireTangent>0.03401269</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -65145,7 +65233,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>18.1759434</WireLengthLambda>
             <WireTangent>0.982858956</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -65185,7 +65275,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>7.85745335</WireLengthLambda>
             <WireTangent>1.02702129</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -65225,7 +65317,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>18.1304588</WireLengthLambda>
             <WireTangent>0.943821549</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -65565,7 +65659,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>5.187313</WireLengthLambda>
             <WireTangent>34.9893951</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -65625,7 +65721,10 @@
             <Visible>true</Visible>
             <WireLengthLambda>2.8898046</WireLengthLambda>
             <WireTangent>0.02564387</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -65645,7 +65744,10 @@
             <Visible>true</Visible>
             <WireLengthLambda>3.70666838</WireLengthLambda>
             <WireTangent>24.99238</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+              <EntityType>WirePower</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -65725,6 +65827,46 @@
             <Visible>true</Visible>
             <WireLengthLambda>3.04517841</WireLengthLambda>
             <WireTangent>0.33332628</WireTangent>
+            <TraverseBlackList />
+          </Entity>
+          <Entity>
+            <Label />
+            <LambdaWidth>1</LambdaWidth>
+            <LambdaHeight>1</LambdaHeight>
+            <LambdaX>553.0385</LambdaX>
+            <LambdaY>136.8245</LambdaY>
+            <LambdaEndX>556.188538</LambdaEndX>
+            <LambdaEndY>136.924484</LambdaEndY>
+            <Type>WireInterconnect</Type>
+            <ColorOverride>Black</ColorOverride>
+            <LabelAlignment>GlobalSettings</LabelAlignment>
+            <Priority>2</Priority>
+            <PathPoints />
+            <WidthOverride>0</WidthOverride>
+            <Children />
+            <Visible>true</Visible>
+            <WireLengthLambda>3.151611</WireLengthLambda>
+            <WireTangent>0.03174288</WireTangent>
+            <TraverseBlackList />
+          </Entity>
+          <Entity>
+            <Label />
+            <LambdaWidth>1</LambdaWidth>
+            <LambdaHeight>1</LambdaHeight>
+            <LambdaX>552.8904</LambdaX>
+            <LambdaY>134.9573</LambdaY>
+            <LambdaEndX>556.8904</LambdaEndX>
+            <LambdaEndY>135.0573</LambdaEndY>
+            <Type>WireInterconnect</Type>
+            <ColorOverride>Black</ColorOverride>
+            <LabelAlignment>GlobalSettings</LabelAlignment>
+            <Priority>2</Priority>
+            <PathPoints />
+            <WidthOverride>0</WidthOverride>
+            <Children />
+            <Visible>true</Visible>
+            <WireLengthLambda>4.00125</WireLengthLambda>
+            <WireTangent>0.0249977112</WireTangent>
             <TraverseBlackList />
           </Entity>
         </Children>
@@ -66023,7 +66165,10 @@
         <Visible>true</Visible>
         <WireLengthLambda>0</WireLengthLambda>
         <WireTangent>NaN</WireTangent>
-        <TraverseBlackList />
+        <TraverseBlackList>
+          <EntityType>ViasConnect</EntityType>
+          <EntityType>ViasInout</EntityType>
+        </TraverseBlackList>
       </Entity>
       <Entity>
         <Label>Data Port</Label>
@@ -66311,6 +66456,7 @@
     <ColorOverride>Black</ColorOverride>
     <LabelAlignment>GlobalSettings</LabelAlignment>
     <Priority>3</Priority>
+    <PathPoints />
     <WidthOverride>0</WidthOverride>
     <Children>
       <Entity>
@@ -66325,11 +66471,13 @@
         <ColorOverride>Black</ColorOverride>
         <LabelAlignment>GlobalSettings</LabelAlignment>
         <Priority>4</Priority>
+        <PathPoints />
         <WidthOverride>0</WidthOverride>
         <Children />
         <Visible>true</Visible>
         <WireLengthLambda>0</WireLengthLambda>
         <WireTangent>NaN</WireTangent>
+        <TraverseBlackList />
       </Entity>
       <Entity>
         <Label>OLED rails</Label>
@@ -66343,11 +66491,13 @@
         <ColorOverride>Black</ColorOverride>
         <LabelAlignment>GlobalSettings</LabelAlignment>
         <Priority>4</Priority>
+        <PathPoints />
         <WidthOverride>0</WidthOverride>
         <Children />
         <Visible>true</Visible>
         <WireLengthLambda>0</WireLengthLambda>
         <WireTangent>NaN</WireTangent>
+        <TraverseBlackList />
       </Entity>
       <Entity>
         <Label>Berkley SPI</Label>
@@ -66361,15 +66511,18 @@
         <ColorOverride>Black</ColorOverride>
         <LabelAlignment>GlobalSettings</LabelAlignment>
         <Priority>4</Priority>
+        <PathPoints />
         <WidthOverride>0</WidthOverride>
         <Children />
         <Visible>true</Visible>
         <WireLengthLambda>0</WireLengthLambda>
         <WireTangent>NaN</WireTangent>
+        <TraverseBlackList />
       </Entity>
     </Children>
     <Visible>true</Visible>
     <WireLengthLambda>0</WireLengthLambda>
     <WireTangent>NaN</WireTangent>
+    <TraverseBlackList />
   </Entity>
 </ArrayOfEntity>
