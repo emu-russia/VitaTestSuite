@@ -48414,7 +48414,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>32.0408058</WireLengthLambda>
             <WireTangent>1.00276244</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
@@ -48734,7 +48736,9 @@
             <Visible>true</Visible>
             <WireLengthLambda>8.189647</WireLengthLambda>
             <WireTangent>0.0229007639</WireTangent>
-            <TraverseBlackList />
+            <TraverseBlackList>
+              <EntityType>ViasConnect</EntityType>
+            </TraverseBlackList>
           </Entity>
           <Entity>
             <Label />
