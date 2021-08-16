@@ -28,7 +28,7 @@ The main chip on the back side is Ernie (Syscon). Its wiring is especially geeky
 
 Also on the back side is the audio chip (such a nice mirrored one), Wolfson. Not really explored its connections yet.
 
-## Other.
+## Other
 
 The small wires that end up going into Power/Ground are marked as "DC" (I just led them in, but then they end up going into Power/Ground).
 Generally the purpose of the study is not to analyze the Power Wells, more interested in the signal connections.
