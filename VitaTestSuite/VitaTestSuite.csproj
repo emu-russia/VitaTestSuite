@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -13,6 +13,9 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
+    <!-- The project has binary .resx resources (bitmaps/icon); the dotnet SDK's
+         MSBuild needs the preserialized resource path to build them. -->
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -40,7 +43,26 @@
     <Reference Include="Be.Windows.Forms.HexBox, Version=1.6.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Be.Windows.Forms.HexBox.1.6.1\lib\net40\Be.Windows.Forms.HexBox.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System.Resources.Extensions, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>libs\System.Resources.Extensions.dll</HintPath>
+    </Reference>
+    <!-- Dependencies of System.Resources.Extensions on .NET Framework 4.8 -->
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>libs\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>libs\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>libs\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>libs\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,8 +75,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArmCore.cs" />
-    <Compile Include="ArmDisasm.cs" />
+    <Compile Include="Core\AccessLog.cs" />
+    <Compile Include="Core\ArmCore.cs" />
+    <Compile Include="Core\ArmDisasm.cs" />
+    <Compile Include="Core\ArmMmu.cs" />
+    <Compile Include="Core\ArmVfp.cs" />
+    <Compile Include="Core\CoreAes.cs" />
+    <Compile Include="Core\CpuCore.cs" />
+    <Compile Include="Core\ElfImage.cs" />
+    <Compile Include="Core\ImageLoader.cs" />
+    <Compile Include="Core\MePCore.cs" />
+    <Compile Include="Core\MePIsa.cs" />
+    <Compile Include="Core\NidDatabase.cs" />
+    <Compile Include="Core\PupPackage.cs" />
+    <Compile Include="Core\Rl78Core.cs" />
+    <Compile Include="Core\Rl78Decode.cs" />
+    <Compile Include="Core\Rl78Disasm.cs" />
+    <Compile Include="Core\Rl78Isa.cs" />
+    <Compile Include="Core\Rl78IsaTable.g.cs" />
+    <Compile Include="Core\SceKeys.cs" />
+    <Compile Include="Core\SceSelf.cs" />
+    <Compile Include="Core\Devices\VitaDevices.cs" />
+    <Compile Include="Core\Sandbox.cs" />
     <Compile Include="CommandProcessor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
